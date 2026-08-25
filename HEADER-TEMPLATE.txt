@@ -1,7 +1,7 @@
 /*
- * Student ID :
+ * Student ID :1690704075
  * Name       :
- * Section    :
- * No.        :
+ * Section    :129D
+ * No.        :N/A
  * Course     : GI113 Computer Programming (GI)
  */
