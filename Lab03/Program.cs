@@ -51,7 +51,7 @@ namespace Lab03
             int critCast = (int)critMultiplier;
             int critConvert = Convert.ToInt32(critMultiplier);
             Console.WriteLine($"Crit Multiplier (int cast): {critCast}");
-            Console.WriteLine($"Crit Multiplier (int convert): {critConvert}");
+            Console.WriteLine($"Crit Multiplier (Convert rounded): {critConvert}");
         }
     }
 }
