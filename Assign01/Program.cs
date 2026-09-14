@@ -13,7 +13,7 @@ namespace Assign01
     {
         static void Main(string[] args)
         {
-            const string gameName = "Plant vs Zombies 2"; //const
+            const string GameName= "Plant vs Zombies 2"; //const
             var charName = "Sunflower";
             var charType = "Enlighten-mint";
             var sunProduction = "Normal";
@@ -29,7 +29,7 @@ namespace Assign01
             double charHealthRounded = Convert.ToInt32(charHealth);
 
 
-            Console.WriteLine(gameName);
+            Console.WriteLine(GameName);
             Console.WriteLine(" ------------------------------------");
             Console.WriteLine($"|             {charName}              |");              
             Console.WriteLine(" ------------------------------------");
@@ -50,10 +50,10 @@ namespace Assign01
                 $"      RechargeAsDouble: {charRechargeAsDouble} seconds",
                 "",
                 $"      Atk: {charAttack}",
-                $"",
+                "",
+                "",
                 $"      Sunflowers are essential for you to produce extra sun.",
                 $"      Try planting as many as you can!",
-                "",
                 "",
                 "",
                 $"      Obtained:{charIsObtained}",
