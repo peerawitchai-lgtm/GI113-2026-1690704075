@@ -14,46 +14,6 @@ namespace Lab06
     {
         static void Main(string[] args)
         {
-            int lives = 1;
-
-            if (lives == 0)
-            {
-                Console.WriteLine("Game Over");
-
-            }
-            Console.WriteLine("Continue Code");
-
-
-
-
-            //int level = 12;
-            Console.Write("Your level(1-99): ");
-            bool inputValid = int.TryParse(Console.ReadLine(), out int level);
-            bool hasKey = false;
-
-
-            if (!inputValid || level < 1 || level > 99)
-            {
-                Console.WriteLine("Invalid level.");
-            }
-            else if (level >= 10 && hasKey) 
-            {
-                Console.WriteLine("Boss floor unlock");
-            }
-            else if (level >= 5 && hasKey)
-            {
-                Console.WriteLine("The door opens.");
-            }
-            else if (!hasKey)
-            {
-                Console.WriteLine("Locked. Find a key");
-            }
-            else
-            {
-                Console.WriteLine("The door stays shut");
-            }
-
-
             Console.WriteLine("Adventure of Somchai");
             Console.WriteLine(">==== Monster Number 1 ====<");
             Console.WriteLine();
