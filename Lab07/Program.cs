@@ -15,7 +15,8 @@
             Console.WriteLine("2) Fire Magic");
             Console.WriteLine("3) Defend");
             Console.WriteLine("4) Run");
-            Console.Write("Choose (1-4): ");
+            Console.WriteLine("5) Telekinesis");
+            Console.Write("Choose (1-5): ");
             int.TryParse(Console.ReadLine(), out int command);
 
             switch (command)
@@ -32,6 +33,9 @@
                 case 4:
                     Console.WriteLine("Hero looks for a way out...");
                     break;
+                case 5:
+                    Console.WriteLine("Hero uses Telekinesis!");
+                    break;
                 default:
                     Console.WriteLine("Hero hesitates. Invalid command!");
                     break;
@@ -41,6 +45,7 @@
                     {
                         1 => 12,
                         2 => 18,
+                        5 => 15,
                         _ => 0
                     };
                     int damage = Math.Max(0, power - monsterDefense);
@@ -50,6 +55,7 @@
                     {
                         >= 12 => "Critical hit!",
                         >= 5 => "Solid hit.",
+                        >= 2 => "Weak hit.",
                         > 0 => "Scratch.",
                         _ => "No damage."
                     };
